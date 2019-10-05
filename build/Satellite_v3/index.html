@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | satellite</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <script src="TemplateData/UnityProgress.js"></script>
+  </head>
+  <body class="template">
+    <div class="template-wrap clear">
+      <!--カウンター画像からは配布サイトへリンクが設定されています。また、誤作動、誤表示の原因となりますのでコードの改変、改行は行わないで下さい。
+このコメント部分は削除して頂いても結構です。-->
+        <div>
+            <img src="screenshot.png" alt="Screen shot" height="50" width="80">
+        </div>
+        <script language="Javascript">
+        document.write('<a href="http://www.free-counter.jp/"></a>');
+        </script>
+        <noscript>
+            <a href="http://hos.f-counter.com/">counter</a>
+            <a href="http://www.free-counter.jp/">カウンター</a>
+        </noscript>
+        <a href="http://www.free-counter.jp/"><img src="https://www.f-counter.net/j/27/1489041721/" alt="カウンター"></a>
+      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+      <br>
+      <div class="logo"></div>
+      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+      <div class="title">satellite</div>
+    </div>
+    <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    backgroundColor: "#222C36",
+    splashStyle: "Light",
+    dataUrl: "Release/Satellite_v3.data",
+    codeUrl: "Release/Satellite_v3.js",
+    asmUrl: "Release/Satellite_v3.asm.js",
+    memUrl: "Release/Satellite_v3.mem",
+  };
+</script>
+<script src="Release/UnityLoader.js"></script>
+
+  </body>
+</html>
